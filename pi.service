@@ -1,0 +1,13 @@
+[Unit]
+Description=Pi approximation service
+
+[Service]
+User=root
+ExecStart=/home/user/Desktop/pi/server
+Restart=always
+RestartSec=1
+StartLimitBurst=5
+StartLimitIntervalSec=10
+
+[Install]
+WantedBy=multi-user.target
